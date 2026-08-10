@@ -130,7 +130,7 @@ img {
     border: 10px solid black;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    
+    margin-bottom: 40px;
 }
 
 .pro:hover {
