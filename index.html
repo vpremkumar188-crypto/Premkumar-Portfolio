@@ -165,14 +165,14 @@
                 if(value<0){
                     value = index.length-1;
                 }
-                box.style.background = `url("images${index[value]}.jpg") no-repeat center/cover`;
+                box.style.background = `url("main/images${index[value]}.png") no-repeat center/cover`;
             }
             if(btn.classList.contains("right")){
                 value++;
                 if(value==index.length){
                     value = 0;
                 }
-                box.style.background = `url("images${index[value]}.jpg") no-repeat center/cover`;
+                box.style.background = `url("main/images${index[value]}.png") no-repeat center/cover`;
             }
         })
     })
