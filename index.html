@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premkumar's Portfolio</title>
+    <link rel="stylesheet" href="main/head.css">
+    <link rel="stylesheet" href="main/body.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <div class="headingholder">
+                <div class="fir">
+                    <div class="logo">
+                        <h1 class="h1"><a id="a" href="index.html">VP</a></h1>
+                    </div>
+                    <div class="name">
+                        <h1>Premkumar V</h1>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul type="none">
+                        <li><a class="ab" href="#about">About</a></li>
+                        <li><a class="ab" href="#skill">Skill</a></li>
+                        <li><a class="ab" href="#project">Project</a></li>
+                    </ul>
+                </nav>
+                <div class="contact">
+                    <a id="a" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div id="basic">
+            <div class="text">
+                <h2>Hi I'm</h2>
+                <h1><span>Premkumar</span></h1>
+                <h2>UI/UX designer</h2>
+                <h2>I'm a good <span>Front End</span> Designer,</h2>
+                <h2>and I'm also a good <span>UX</span> Designer.</h2>
+            </div>
+            <div class="pic">
+                <img src="main/my_pic.jpeg">
+            </div>
+        </div>
+        <div id="about">
+            <h1>About</h1>
+            <p class="about_pre"><span>Hello</span> I'm Premkumar</p>
+            <div class="pa">
+                <p class="about_pre"> I'm a <span>Softwere Developer</span>. I graduated with a <span>B.Sc. in
+                        Computer Science</span> from M.S.S. Wokf Board College in Madurai . I am Highly
+                    interested in softwere development,and
+                    my career goal is to become a <span>successful software developer</span>.I'm
+                    learn UI/UX Designing course in Madurai <span> Elysium Academy </span>.
+                </p>
+                <p class="about_pre"> I'm a good <span>team coordinator</span>,and good <span>Softwere
+                        Developer</span>.I
+                    have a basic <span>communication
+                        Skill</span>.</p>
+            </div>
+        </div>
+        <div id="skill">
+            <h1>Skill</h1>
+            <div class="main_skill">
+                <div class="skill_box">
+                    <img class="img1" src="main/HTML_Logo.png">
+                    <h3 class="con">I create best html layout for the web sites.</h3>
+                </div>
+                <div class="skill_box">
+                    <img class="img2" src="main/CSS_Logo.png">
+                    <h3 class="con">I create good design using CSS for the web sites.</h3>
+                </div>
+                <div class="skill_box">
+                    <img class="img3" src="main/js_logo.png">
+                    <h3 class="con">I develop a web page interactivly using javascript </h3>
+                </div>
+                <div class="skill_box">
+                    <img class="" src="main/figma.png">
+                    <h3 class="con">I will create a prototype of web page using figma.</h3>
+                </div>
+                <div class="skill_box">
+                    <img class="img3" src="main/wordpress_logo.png">
+                    <h3 class="con"></h3>
+                </div>
+                <div class="skill_box">
+                    <img src="main/sql_logo.jpg">
+                    <h3 class="con">I know SQL DDl,DML,DQl commands for analysis database.</h3>
+                </div>
+            </div>
+        </div>
+        <div id="project">
+            <h1>Project</h1>
+            <div class="pro">
+                <div class="hname">
+                    <h2>Online E kart web site</h2>
+                </div>
+                <div class="detail">
+                    <h3><a id="pro_a" href="Display.html">E kart site</a> - Online E Kart web site Develop using HTML
+                        layout and CSS style.
+                        Access Multiple web pages with Media Query
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <button class="btn left"><i class="fa-solid fa-circle-left" style="color: rgb(5, 5, 5);"></i></button>
+            <button class="btn right"><i class="fa-solid fa-circle-right"
+                    style="color: rgb(9, 9, 9);"></i></button>
+        </div>
+        <div id="contact">
+            <div class="con_detail">
+                <h2>Contact details</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Email :</h3>
+                        </td>
+                        <td>vpremkumar188@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Phone No :</h3>
+                        </td>
+                        <td>9342396330</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <a href="https://wa.me/919342396330" target="_blank" class="new_a">
+            <div class="whatsapp">
+                <h3 id="whatsapp_h3">Chat with me</h3>
+            </div>
+        </a>
+    </div>
+</body>
+<script>
+    const box = document.querySelector(".box");
+    const button = document.querySelectorAll(".btn");
+    const index = ["1","2","3"];
+    let value = 0;
+    button.forEach((btn)=>{
+        btn.addEventListener("click",()=>{
+            if(btn.classList.contains("left")){
+                value--;
+                if(value<0){
+                    value = index.length-1;
+                }
+                box.style.background = `url("images${index[value]}.jpg") no-repeat center/cover`;
+            }
+            if(btn.classList.contains("right")){
+                value++;
+                if(value==index.length){
+                    value = 0;
+                }
+                box.style.background = `url("images${index[value]}.jpg") no-repeat center/cover`;
+            }
+        })
+    })
+</script>
+</html>
