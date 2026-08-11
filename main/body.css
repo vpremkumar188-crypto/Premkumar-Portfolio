@@ -293,4 +293,9 @@ img {
     .img3 {
         width: 160px;
     }
+    .box{
+        width: 350px;
+        height: 500px;
+        margin-left: -60px;
+    }
 }
