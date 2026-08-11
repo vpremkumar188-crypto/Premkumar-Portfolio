@@ -212,14 +212,14 @@ img {
 }
 
 .box {
-    width: 60%;
+    width: 27%;
     height: 70vh;
     position: relative;
     background-image: url("main/images1.png");
     background-repeat: no-repeat;
     background-size: cover;
     top: 100px;
-    left: 20%;
+    left: 35%;
     border: 5px solid black;
     border-radius: 30px;
 }
